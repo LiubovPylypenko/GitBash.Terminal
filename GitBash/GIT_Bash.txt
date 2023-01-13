@@ -1,0 +1,147 @@
+1. Look where I'm
+$ pwd
+/c/Users/User/Documents
+
+2. Create folder
+$ mkdir Purple
+User@DESKTOP-SM8UTB5 MINGW64 ~/Documents
+
+3. Зайти в папку
+$ cd Purple/
+User@DESKTOP-SM8UTB5 MINGW64 ~/Documents/Purple
+
+4) Создать 3 папки
+$ mkdir Black Blue White
+
+5) Зайти в любоую папку
+$ cd Blue
+User@DESKTOP-SM8UTB5 MINGW64 ~/Documents/Purple/Blue
+
+6) Создать 5 файлов (3 txt, 2 json)
+$ touch Tulips.txt Roses.txt Jasmine.txt Corn.json Bean.json
+$ ls -la
+total 4
+drwxr-xr-x 1 User 197121 0 Jan 13 20:09 ./
+drwxr-xr-x 1 User 197121 0 Jan 13 20:02 ../
+-rw-r--r-- 1 User 197121 0 Jan 13 20:09 Bean.json
+-rw-r--r-- 1 User 197121 0 Jan 13 20:09 Corn.json
+-rw-r--r-- 1 User 197121 0 Jan 13 20:09 Jasmine.txt
+-rw-r--r-- 1 User 197121 0 Jan 13 20:09 Roses.txt
+-rw-r--r-- 1 User 197121 0 Jan 13 20:09 Tulips.txt
+
+7) Создать 3 папки
+$ mkdir dir_1 dir_2 dir_3
+
+8. Вывести список содержимого папки
+User@DESKTOP-SM8UTB5 MINGW64 ~/Documents/Purple/Blue
+$ ls -la
+total 4
+drwxr-xr-x 1 User 197121 0 Jan 13 20:10 ./
+drwxr-xr-x 1 User 197121 0 Jan 13 20:02 ../
+-rw-r--r-- 1 User 197121 0 Jan 13 20:09 Bean.json
+-rw-r--r-- 1 User 197121 0 Jan 13 20:09 Corn.json
+-rw-r--r-- 1 User 197121 0 Jan 13 20:09 Jasmine.txt
+-rw-r--r-- 1 User 197121 0 Jan 13 20:09 Roses.txt
+-rw-r--r-- 1 User 197121 0 Jan 13 20:09 Tulips.txt
+drwxr-xr-x 1 User 197121 0 Jan 13 20:10 dir_1/
+drwxr-xr-x 1 User 197121 0 Jan 13 20:10 dir_2/
+drwxr-xr-x 1 User 197121 0 Jan 13 20:10 dir_3/
+
+9) + Открыть любой txt файл
+$ vim Jasmine.txt
+
+10) + написать туда что-нибудь, любой текст.
+User@DESKTOP-SM8UTB5 MINGW64 ~/Documents/Purple/Blue
+Jasmine (taxonomic name: Jasminum; /ˈjæsmɪnəm/, YASS-min-əm[5]) is a genus of shrubs and vines in the olive family (Oleaceae). 
+It contains around 200 species native to tropical and warm temperate regions of Eurasia, Africa, and Oceania.
+ Jasmines are widely cultivated for the characteristic fragrance of their flowers. A number of unrelated plants contain the word
+ "jasmine" in their common names (see Other plants called "jasmine").
+
+11) + сохранить и выйти.
+INSERT
+'ESC' ':wq' -> Enter
+
+12) Выйти из папки на уровень выше
+$ cd ..
+User@DESKTOP-SM8UTB5 MINGW64 ~/Documents/Purple/Blue
+
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+$ mv /C/Users/User/Documents/Purple/Blue/{Jasmine.txt,Bean.json} /C/Users/User/Documents/Purple/Blue/dir_3
+$ mv /C/Users/User/Documents/Purple/Blue/Bean.json /C/Users/User/Documents/Purple/Blue/dir_3
+User@DESKTOP-SM8UTB5 MINGW64 ~/Documents/Purple/Blue
+$ mv /C/Users/User/Documents/Purple/Blue/Bean.json /C/Users/User/Documents/Purple/Blue/dir_3
+$ ls -la
+total 4
+drwxr-xr-x 1 User 197121 0 Jan 13 20:54 ./
+drwxr-xr-x 1 User 197121 0 Jan 13 20:02 ../
+-rw-r--r-- 1 User 197121 0 Jan 13 20:09 Corn.json
+-rw-r--r-- 1 User 197121 0 Jan 13 20:09 Roses.txt
+-rw-r--r-- 1 User 197121 0 Jan 13 20:09 Tulips.txt
+drwxr-xr-x 1 User 197121 0 Jan 13 20:10 dir_1/
+drwxr-xr-x 1 User 197121 0 Jan 13 20:10 dir_2/
+drwxr-xr-x 1 User 197121 0 Jan 13 20:54 dir_3/
+
+User@DESKTOP-SM8UTB5 MINGW64 ~/Documents/Purple/Blue
+$ cd dir_3
+User@DESKTOP-SM8UTB5 MINGW64 ~/Documents/Purple/Blue/dir_3
+$ ls -la
+total 5
+drwxr-xr-x 1 User 197121   0 Jan 13 20:54 ./
+drwxr-xr-x 1 User 197121   0 Jan 13 20:54 ../
+-rw-r--r-- 1 User 197121   0 Jan 13 20:09 Bean.json
+-rw-r--r-- 1 User 197121 439 Jan 13 20:13 Jasmine.txt
+
+14. скопировать любые 2 файла, которые вы создали, в любую другую папку.
+$ cp /C/Users/User/Documents/Purple/Blue/{Roses.txt,Tulips.txt} /C/Users/User/Documents/Purple/White/
+User@DESKTOP-SM8UTB5 MINGW64 ~/Documents/Purple/Blue
+$ ls -la
+total 4
+drwxr-xr-x 1 User 197121 0 Jan 13 20:54 ./
+drwxr-xr-x 1 User 197121 0 Jan 13 20:02 ../
+-rw-r--r-- 1 User 197121 0 Jan 13 20:09 Corn.json
+-rw-r--r-- 1 User 197121 0 Jan 13 20:09 Roses.txt
+-rw-r--r-- 1 User 197121 0 Jan 13 20:09 Tulips.txt
+drwxr-xr-x 1 User 197121 0 Jan 13 20:10 dir_1/
+drwxr-xr-x 1 User 197121 0 Jan 13 20:10 dir_2/
+drwxr-xr-x 1 User 197121 0 Jan 13 20:54 dir_3/
+
+User@DESKTOP-SM8UTB5 MINGW64 ~/Documents/Purple/Blue
+$ cd ..
+
+User@DESKTOP-SM8UTB5 MINGW64 ~/Documents/Purple
+$ cd White/
+
+User@DESKTOP-SM8UTB5 MINGW64 ~/Documents/Purple/White
+$ ls -la
+total 0
+drwxr-xr-x 1 User 197121 0 Jan 13 21:08 ./
+drwxr-xr-x 1 User 197121 0 Jan 13 20:02 ../
+-rw-r--r-- 1 User 197121 0 Jan 13 21:08 Roses.txt
+-rw-r--r-- 1 User 197121 0 Jan 13 21:08 Tulips.txt
+
+15. Найти файл по имени
+$ find . -name Corn.*
+./Corn.json
+
+ 16.просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+$ grep 'word' /C/Users/User/Documents/Purple/Blue/dir_3/Jasmine.txt
+ Jasmines are widely cultivated for the characteristic fragrance of their flowers. 
+A number of unrelated plants contain the word
+
+17.вывести несколько первых строк из текстового файла
+$ head -2 /C/Users/User/Documents/Purple/Blue/Roses.txt
+Jasmine is known for its delicate flowers and
+beautiful scent.
+
+18.вывести несколько последних строк из текстового файла
+$ tail -2 /C/Users/User/Documents/Purple/Blue/Roses.txt
+However, some types of jasmine have yellow or pink flowers, and
+some do not have a scent at all.
+
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+$ less /C/Users/User/Documents/Purple/Blue/Roses.txt
+
+20) вывести дату и время
+$ date +"%D %T"
+01/14/23 00:56:54
+
